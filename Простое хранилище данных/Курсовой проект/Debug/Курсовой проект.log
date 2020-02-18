@@ -1,0 +1,12 @@
+﻿  condition_parser.cpp
+  condition_parser_test.cpp
+  database.cpp
+  database_test.cpp
+  date.cpp
+  main.cpp
+  node.cpp
+  token.cpp
+  Создание кода...
+d:\documents\visual studio 2017\projects\coursera\желтый пояс\простое хранилище данных\курсовой проект\node.cpp(63): warning C4715: EventComparisonNode::Evaluate: значение возвращается не при всех путях выполнения
+d:\documents\visual studio 2017\projects\coursera\желтый пояс\простое хранилище данных\курсовой проект\node.cpp(32): warning C4715: DateComparisonNode::Evaluate: значение возвращается не при всех путях выполнения
+  Курсовой проект.vcxproj -> D:\Documents\Visual Studio 2017\Projects\Coursera\Желтый пояс\Простое хранилище данных\Debug\Курсовой проект.exe
