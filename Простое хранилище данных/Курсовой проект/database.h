@@ -26,31 +26,7 @@ private:
 template<class Func>
 inline int Database::RemoveIf(Func func)
 {		
-	int deleted = 0;
-
-	/*for (auto date = prior_storage.begin(); date != prior_storage.end();)
-	{		
-		for (auto event = date->second.begin(); event != date->second.end(); event++)
-		{
-			auto it = stable_partition(date->second.begin(), date->second.end(), func(date->first, *event));
-			if (storage[date->first].find(*event) != storage[date->first].end())
-			{
-				storage[date->first].erase(*event);
-				deleted++;				
-			}
-			prior_storage[date->first].erase(date->second.begin(), it);
-		}
-		
-		if (storage[date->first].empty())
-		{
-			storage.erase(date->first);
-			date = prior_storage.erase(date);
-		}
-		else
-		{
-			++date;
-		}
-	}*/
+	int deleted = 0;	
 
 	for (auto date = prior_storage.begin(); date != prior_storage.end();)
 	{		

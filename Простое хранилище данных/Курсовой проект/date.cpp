@@ -1,14 +1,8 @@
 #include "date.h"
 
 Date::Date(int new_year, int new_month, int new_day) {
-	year = new_year;
-	/*if (new_month > 12 || new_month < 1) {
-		throw logic_error("Month value is invalid: " + to_string(new_month));
-	}*/
-	month = new_month;
-	/*if (new_day > 31 || new_day < 1) {
-		throw logic_error("Day value is invalid: " + to_string(new_day));
-	}*/
+	year = new_year;	
+	month = new_month;	
 	day = new_day;
 }
 
@@ -29,12 +23,6 @@ string Date::Date_to_string() const
 		"-" << setw(2) << setfill('0') << GetMonth() <<
 		"-" << setw(2) << setfill('0') << GetDay();
 	return os.str();
-}
-
-bool operator<(const Date & lhs, const Date & rhs)
-{
-	return vector<int>{lhs.GetYear(), lhs.GetMonth(), lhs.GetDay()} <
-		vector<int>{rhs.GetYear(), rhs.GetMonth(), rhs.GetDay()};
 }
 
 Date ParseDate(istream& date_stream)
@@ -76,6 +64,11 @@ bool operator!=(const Date& lhs, const Date& rhs)
 bool operator>(const Date& lhs, const Date& rhs)
 {
 	return make_tuple(lhs.GetYear(), lhs.GetMonth(), lhs.GetDay()) > make_tuple(rhs.GetYear(), rhs.GetMonth(), rhs.GetDay());
+}
+bool operator<(const Date & lhs, const Date & rhs)
+{
+	return vector<int>{lhs.GetYear(), lhs.GetMonth(), lhs.GetDay()} <
+		vector<int>{rhs.GetYear(), rhs.GetMonth(), rhs.GetDay()};
 }
 bool operator>=(const Date& lhs, const Date& rhs)
 {

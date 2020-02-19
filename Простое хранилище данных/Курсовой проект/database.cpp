@@ -17,19 +17,7 @@ map<Date, vector<string>>::const_iterator FindNearestElement(const map<Date, vec
 	{
 		return first_not_less;
 	}
-
-	// ≈сли элементов, не меньших border, нет и set не пуст, то достаточно вз€ть
-	// итератор на последний элемент, меньший border
-	// prev -> http://ru.cppreference.com/w/cpp/iterator/prev
-	/*const auto last_less = prev(first_not_less);
-	if (first_not_less == numbers.end()) {
-		return last_less;
-	}	
-
-	// –азыменуем оба итератора-кандидата и выберем тот,
-	// чей элемент ближе к искомому
-	const bool is_left = (border - last_less->first <= first_not_less->first - border);
-	return is_left ? last_less : first_not_less;*/
+	
 	return prev(first_not_less);
 }
 

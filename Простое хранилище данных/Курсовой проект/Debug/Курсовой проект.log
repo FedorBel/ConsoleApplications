@@ -7,6 +7,7 @@
   node.cpp
   token.cpp
   Создание кода...
-d:\documents\visual studio 2017\projects\coursera\желтый пояс\простое хранилище данных\курсовой проект\node.cpp(63): warning C4715: EventComparisonNode::Evaluate: значение возвращается не при всех путях выполнения
-d:\documents\visual studio 2017\projects\coursera\желтый пояс\простое хранилище данных\курсовой проект\node.cpp(32): warning C4715: DateComparisonNode::Evaluate: значение возвращается не при всех путях выполнения
-  Курсовой проект.vcxproj -> D:\Documents\Visual Studio 2017\Projects\Coursera\Желтый пояс\Простое хранилище данных\Debug\Курсовой проект.exe
+d:\documents\consoleapplications\простое хранилище данных\курсовой проект\node.cpp(63): warning C4715: EventComparisonNode::Evaluate: значение возвращается не при всех путях выполнения
+d:\documents\consoleapplications\простое хранилище данных\курсовой проект\node.cpp(32): warning C4715: DateComparisonNode::Evaluate: значение возвращается не при всех путях выполнения
+  LINK : не найден или не выполнена сборка D:\Documents\ConsoleApplications\Простое хранилище данных\Debug\Курсовой проект.exe при последней инкрементной компоновке; выполняется полная компоновка
+  Курсовой проект.vcxproj -> D:\Documents\ConsoleApplications\Простое хранилище данных\Debug\Курсовой проект.exe
